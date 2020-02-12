@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>문서 객체 복수 선택</title>
-            <script>
-                window.onload = function()
+<html>
+    <head>
+        <title>문서 객체 복수 선택</title>
+        <script>
+            window.onload = function()
+            {
+                var headers = document.querySelectorAll('h1');
+                for(let header of headers)
                 {
-                    var headers = document.querySelectorAll('h1');
-                    for(let header of headers)
-                    {
-                        header.style.color = 'orange';
-                        header.style.backgroundColor = 'black';
-                        header.innerHTML = 'From Javascript!!!';
-                    }
+                    header.style.color = 'orange';
+                    header.style.backgroundColor = 'black';
+                    header.innerHTML = 'From Javascript!!!';
                 }
-            </script>
-        </head>
-        <body>
-            <h1>process -1</h1>
-            <h1>process -1</h1>
-            <h1>process -1</h1>
-        </body>
-    </html>
+            }
+        </script>
+    </head>
+    <body>
+        <h1>process -1</h1>
+        <h1>process -1</h1>
+        <h1>process -1</h1>
+    </body>
+</html>
